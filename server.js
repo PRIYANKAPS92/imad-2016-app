@@ -18,6 +18,11 @@ content:`<p>This is the content for my first article.This is the content for my 
             <p>This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article. 
             </p>`
 };
+function createTemplate(data){
+var title=data.title;
+var heading=data.heading;
+var date=data.date;
+var content=data.content;
 var htmlTemplate=`<html>
     <head>
         <title>${title}</title>
@@ -44,19 +49,15 @@ var htmlTemplate=`<html>
     </body>
 </html>
 `;
-
-
-
-
-
-
+return htmlTemplate;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.sent(createTemplate(articleOne));
   
 });
 app.get('/article-two', function (req, res) {
