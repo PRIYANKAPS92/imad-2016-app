@@ -18,7 +18,7 @@ content:`<p>This is the content for my first article.This is the content for my 
         <p>This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article. 
         </p>`
 },
-'articl-two':{
+'article-two':{
 title:'Article 2 Priyanka',
 heading:'Article Two',
 date:'Sep 30, 2016',
